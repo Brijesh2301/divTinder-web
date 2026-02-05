@@ -31,6 +31,7 @@ If you are developing a production application, we recommend using TypeScript wi
 - Intall axios
 - Cors - install cores in backend => add middleware to with cionfiguration and confediatal : True  
 - Install Redux toolkit
+-install react-redux +@reduxjs/toolkit =>  configureStore => Provider => createSlice => add reduce to store
  
  Body
   Navbar
