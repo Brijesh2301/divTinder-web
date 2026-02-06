@@ -10,6 +10,7 @@ const Login = () => {
 
   const [emailId, setEmailId] = useState("Virat@gmail.com");
   const [password, setPassword] = useState("Virat@123");
+  const [error, setError] = useState("");
   const dispatch = useDispatch();
 
   const handleLogin = async () => {
@@ -23,7 +24,7 @@ const Login = () => {
       dispatch(addUser(res.data));
       return navigate("/");
     } catch (error) {
-      console.error("Login failed", error);
+      setError(error?.response?.data.message || "Login failed. Please try again.");
     }
   };
   
@@ -58,6 +59,7 @@ const Login = () => {
                 />
               </label>
             </div>
+            <p className="text-red-500">{error} </p>
             <div className="card-actions justify-center">
               <button onClick={handleLogin} className="btn btn-primary">
                 Login
