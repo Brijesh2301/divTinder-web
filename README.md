@@ -31,7 +31,19 @@ If you are developing a production application, we recommend using TypeScript wi
 - Intall axios
 - Cors - install cores in backend => add middleware to with cionfiguration and confediatal : True  
 - Install Redux toolkit
--install react-redux +@reduxjs/toolkit =>  configureStore => Provider => createSlice => add reduce to store
+- install react-redux +@reduxjs/toolkit =>  configureStore => Provider => createSlice => add reduce to store
+- configureStore => Provider => CreateSlice => add reducer to store
+- Add redux devtools in chrome
+- Login and see if your data is coming properly in the store
+- NavBar Update should as user login
+- Refactor our codes to add constant file  + create  a componenets folder
+- You should not be acess other routes without login
+- if token is not present , redirect  user to login page
+- logout features 
+- Get the feed and  add the feed in the store
+- build the user card
+
+
  
  Body
   Navbar
