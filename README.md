@@ -42,6 +42,8 @@ If you are developing a production application, we recommend using TypeScript wi
 - logout features 
 - Get the feed and  add the feed in the store
 - build the user card
+- Edit Profile Feature
+- After Update Profile show the success Toast
 
 
  
