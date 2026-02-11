@@ -4,11 +4,15 @@ const requestSlice = createSlice({
   name: "requests",
   initialState: null,
   reducers: {
-        addRequests: (state, action) => {
-            return action.payload;  // ✅ Must return!
-        },
+    addRequests: (state, action) => {
+      return action.payload;
+    },
+    removeRequest: (state, action) => {
+      // ✅ Keep all requests where _id does NOT match the payload
+      return state.filter(r => r._id !== action.payload);
     }
+  }
 });
 
-export const { addRequests } = requestSlice.actions;
+export const { addRequests, removeRequest } = requestSlice.actions;
 export default requestSlice.reducer;
