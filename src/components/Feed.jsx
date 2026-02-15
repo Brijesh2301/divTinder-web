@@ -30,7 +30,8 @@ const Feed = () => {
     getFeed();
   }, []);
 
-  if (!feed || feed.length === 0) return null;
+  if (!feed || feed.length === 0)
+     return <h1 className=" flex justify-center my-10">No new user find</h1>;
 
   return (
     <div className="flex justify-center my-10">
