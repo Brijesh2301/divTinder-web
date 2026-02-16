@@ -46,7 +46,7 @@ const Login = () => {
     } catch (err) {
       setError(err?.response?.data || "Something went wrong");
     }
-    c
+    
   };
 
   return (
