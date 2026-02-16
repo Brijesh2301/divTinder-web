@@ -44,7 +44,7 @@ const Request = () => {
         return (
           <div
             key={_id}
-            className=" justify-between items-center m-4 p-4 flex rounded-md bg-base-300 w-2/3 mx-auto "
+            className=" justify-between items-center m-4 p-4 flex rounded-md bg-base-300 w-full mx-auto "
           >
             <div className="div">
               {" "}
