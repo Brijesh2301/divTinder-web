@@ -56,5 +56,36 @@ If you are developing a production application, we recommend using TypeScript wi
 
 
   #Deployment
-- 
-- 
+- Signup on AWS
+- Launch instance
+- chmod 400  <secret>.pem
+- ssh -i "devTinder-secret.pem" ssh -i "devTinder-secret.pem" ubuntu@ec2-13-201-171-81.ap-south-1.compute.amazonaws.com
+- install node version using nvm install 22.20.0
+- Git clone
+- install depenecny using npm install this will install the dependency
+
+- Front-end
+  -  npm instll 
+  - npm run build
+  - sudo apt update
+  - sudo apt install nginx
+  - sudo systemctl start nginx
+  - sudo systnctl enable nginx
+  - Copy code from dist(build files) to /var/www/html/
+  - sudo scp -r dist /* (build files) to /var/www/html/
+  - Enable port :80 or your instance
+
+
+
+# Backend Deployment Steps
+ - allowed ec2 instance public IP on mongodb server
+ - npm install pm2 -g
+ - pm2 start npm -- start
+ - pm2 logs // for checking the status of runnig or not
+ - pm2 list , pm2 flush <name> , pm2 stop , pm delete
+
+    frontend = http://13.201.171.81/
+    Backend = http://13.201.171.81:3000/
+
+    Domain name = devtinder.com  => http://13.201.171.81
+    
