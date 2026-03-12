@@ -16,7 +16,7 @@ const UserCard = ({ user }) => {
 
     dispatch(removeUserFromFeed(userId)); // ✅ Correct place
   } catch (err) {
-    throw new err;
+  console.log(err);
   }
 };
 

@@ -84,8 +84,35 @@ If you are developing a production application, we recommend using TypeScript wi
  - pm2 logs // for checking the status of runnig or not
  - pm2 list , pm2 flush <name> , pm2 stop , pm delete
 
-    frontend = http://13.201.171.81/
+    frontend = http://13.201.171.81/ || localhost:5173
     Backend = http://13.201.171.81:3000/
 
     Domain name = devtinder.com  => http://13.201.171.81
     
+
+
+# Adding a custom domain
+ -purchased domain name from any domain Platform
+ -signup on cloudflare & add a new domain 
+ 
+ -chage the nameserver on godaddy and point it to cloudflare
+ -wait for sometime till yoour nameserver are update 15 minutes
+ -DNS record: A devtinder  
+ -Enable SSL for website
+
+# Sending Emails via SES
+ - create a I AM user
+ -Give Access to AmazonSESFullAccess
+- Amazon SES: create your identity
+- verify Your domain name
+- Verify an emaild address identity otheriwse will no wrkid
+- installAWS SDK -v3
+- Code Example 
+- Setup sesClient
+- Acces Creditials should be created in IAM under Security Credetials Tab
+- Add the credetilas to the env fuiles
+- Write code for SESClent
+- Write code for sending email address
+- Make the email dynamic by assingmore params to the run function
+
+

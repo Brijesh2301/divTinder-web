@@ -1,60 +1,82 @@
 import React from 'react'
 
 const Footer = () => {
+  const year = new Date().getFullYear()
+
   return (
-   <>
-   <footer className="footer sm:footer-horizontal bg-neutral text-neutral-content items-center p-4  fixed bottom-0 w-full">
-  <aside className="grid-flow-col items-center">
-    <svg
-      width="36"
-      height="36"
-      viewBox="0 0 24 24"
-      xmlns="http://www.w3.org/2000/svg"
-      fillRule="evenodd"
-      clipRule="evenodd"
-      className="fill-current">
-      <path
-        d="M22.672 15.226l-2.432.811.841 2.515c.33 1.019-.209 2.127-1.23 2.456-1.15.325-2.148-.321-2.463-1.226l-.84-2.518-5.013 1.677.84 2.517c.391 1.203-.434 2.542-1.831 2.542-.88 0-1.601-.564-1.86-1.314l-.842-2.516-2.431.809c-1.135.328-2.145-.317-2.463-1.229-.329-1.018.211-2.127 1.231-2.456l2.432-.809-1.621-4.823-2.432.808c-1.355.384-2.558-.59-2.558-1.839 0-.817.509-1.582 1.327-1.846l2.433-.809-.842-2.515c-.33-1.02.211-2.129 1.232-2.458 1.02-.329 2.13.209 2.461 1.229l.842 2.515 5.011-1.677-.839-2.517c-.403-1.238.484-2.553 1.843-2.553.819 0 1.585.509 1.85 1.326l.841 2.517 2.431-.81c1.02-.33 2.131.211 2.461 1.229.332 1.018-.21 2.126-1.23 2.456l-2.433.809 1.622 4.823 2.433-.809c1.242-.401 2.557.484 2.557 1.838 0 .819-.51 1.583-1.328 1.847m-8.992-6.428l-5.01 1.675 1.619 4.828 5.011-1.674-1.62-4.829z"></path>
-    </svg>
-    <p>Copyright © {new Date().getFullYear()} - All right reserved</p>
-  </aside>
-  <nav className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
-    <a>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        className="fill-current">
-        <path
-          d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
-      </svg>
-    </a>
-    <a>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        className="fill-current">
-        <path
-          d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
-      </svg>
-    </a>
-    <a>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        className="fill-current">
-        <path
-          d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
-      </svg>
-    </a>
-  </nav>
-</footer>
-   </>
+    <footer className="fixed bottom-0 w-full z-50">
+      {/* Top border accent */}
+      <div className="h-px w-full bg-gradient-to-r from-transparent via-primary/60 to-transparent" />
+
+      <div className="bg-base-300/90 backdrop-blur-md px-4 py-3 sm:px-6">
+        <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-0">
+
+          {/* Left — Brand */}
+          <div className="flex items-center gap-2.5 group">
+            <div className="w-8 h-8 rounded-lg bg-primary/10 border border-primary/20 flex items-center justify-center transition-all duration-300 group-hover:bg-primary/20 group-hover:border-primary/40">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-primary" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+              </svg>
+            </div>
+            <span className="text-xs text-base-content/40 font-medium tracking-wide">
+              © {year} · All rights reserved
+            </span>
+          </div>
+
+          {/* Center — Nav links */}
+          <nav className="hidden sm:flex items-center gap-1">
+            {['About', 'Privacy', 'Terms'].map((link) => (
+              <a                                        
+                key={link}
+                href="#"
+                className="px-3 py-1 text-xs font-medium text-base-content/40 rounded-full hover:text-base-content hover:bg-base-content/8 transition-all duration-200"
+              >
+                {link}
+              </a>
+            ))}
+          </nav>
+
+          {/* Right — Social icons */}
+          <nav className="flex items-center gap-1">
+
+            {/* X (Twitter) */}
+            <a href="#" aria-label="X"
+              className="w-8 h-8 rounded-lg flex items-center justify-center text-base-content/35 hover:text-primary hover:bg-primary/10 border border-transparent hover:border-primary/20 transition-all duration-200">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.737-8.835L2.25 2.25H8.08l4.253 5.622L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77z" />
+              </svg>
+            </a>
+
+            {/* Instagram */}
+            <a href="#" aria-label="Instagram"
+              className="w-8 h-8 rounded-lg flex items-center justify-center text-base-content/35 hover:text-primary hover:bg-primary/10 border border-transparent hover:border-primary/20 transition-all duration-200">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                <circle cx="12" cy="12" r="4" />
+                <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+              </svg>
+            </a>
+
+            {/* GitHub */}
+            <a href="#" aria-label="GitHub"
+              className="w-8 h-8 rounded-lg flex items-center justify-center text-base-content/35 hover:text-primary hover:bg-primary/10 border border-transparent hover:border-primary/20 transition-all duration-200">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z" />
+              </svg>
+            </a>
+
+            {/* LinkedIn */}
+            <a href="#" aria-label="LinkedIn"
+              className="w-8 h-8 rounded-lg flex items-center justify-center text-base-content/35 hover:text-primary hover:bg-primary/10 border border-transparent hover:border-primary/20 transition-all duration-200">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+              </svg>
+            </a>
+
+          </nav>
+        </div>
+      </div>
+    </footer>
   )
 }
 
