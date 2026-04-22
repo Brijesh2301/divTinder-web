@@ -116,3 +116,14 @@ If you are developing a production application, we recommend using TypeScript wi
 - Make the email dynamic by assingmore params to the run function
 
 
+# Scheduling cron jobs in NodeJs
+ - Installing node-cron
+ -Learning about cron expression sytax - crontab.guru
+ -Scheduling a job
+ -date-fns
+ -Find all the Unique Email id who have got connection requets in previous day
+ - send Email 
+ -Explore queue machinm to bulk email
+ - Amazon SES Bulk emails
+ - Make sendEmail function
+ -bee -quee & bull packges  

@@ -196,7 +196,7 @@ const EditProfile = ({ user }) => {
       {showToast && (
         <div className="toast toast-top toast-center z-50">
           <div className="alert alert-success shadow-lg flex items-center gap-2 px-5 py-3 rounded-xl text-sm font-medium">
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 shrink-0" fill="cover" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
             </svg>
             <span>Profile updated successfully!</span>
