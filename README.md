@@ -22,7 +22,7 @@ If you are developing a production application, we recommend using TypeScript wi
 - Install Tailwond CSS
 - Install Daisy UI
 - Add to Navbar component to APP.jsx
-- Create a navbar.jsx separeate Coponent APIs
+- Create a .jsx separeate Coponent APIs
 - install React-router-dom 
 - Create BrowserRouter> Routes> Route = / > RouteChildren
 - Create and Outlet in Your Body Component
