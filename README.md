@@ -127,3 +127,9 @@ If you are developing a production application, we recommend using TypeScript wi
  - Amazon SES Bulk emails
  - Make sendEmail function
  -bee -quee & bull packges  
+
+# Razorpay Payment Gatway Integration
+ - Sign up on Rozarpay and & Complete KYC
+ - Created a UI Premium Page
+ - Creating an API for create order in backend
+ 
