@@ -132,4 +132,10 @@ If you are developing a production application, we recommend using TypeScript wi
  - Sign up on Rozarpay and & Complete KYC
  - Created a UI Premium Page
  - Creating an API for create order in backend
+ - added my key and secret in env file
+ - intialize Razorpay in utils
+ - creaing order on Razorpay
+ - created schema and mode in payment collection
+ - make the api dynamic
+ 
  
