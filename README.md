@@ -137,5 +137,10 @@ If you are developing a production application, we recommend using TypeScript wi
  - creaing order on Razorpay
  - created schema and mode in payment collection
  - make the api dynamic
+
+
+
+ # Real Time Chat using Websocket(Socket.io)
+ - Build the UI For 
  
  

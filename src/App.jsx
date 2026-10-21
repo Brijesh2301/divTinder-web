@@ -11,6 +11,7 @@ import About from "./pages/About";
 import ContactUs from "./pages/ContactUs"
 import TermPage from "./pages/TermsPage"
 import Premium from "./components/Premium";
+import Chat from "./components/Chat";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
             <Route path="about" element={<About />} />
             <Route path="contact" element={<ContactUs />} />
             <Route path="term" element={<TermPage />} />
+            <Route path="chat/:targetUserId" element={<Chat />} />
           </Route>
         </Routes>
       </BrowserRouter>
