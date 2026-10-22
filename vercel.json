@@ -2,7 +2,8 @@
   "rewrites": [
     {
       "source": "/api/:path*",
-      "destination": "http://15.206.222.88:3000/:path*"
-    }
+      "destination": "https://devtinder-d620.onrender.com/:path*"
+    },
+           { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
